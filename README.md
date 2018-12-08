@@ -61,7 +61,7 @@ Route::middleware('twilio')
 
 ## Security
 
-If you discover any security related issues, please email 
+If you discover any security related issues, please email [Me](mailto:princeton.mosha@gmail.com?subject=TwilioMiddleware Package Security Issue)
 instead of using the issue tracker.
 
 ## Credits

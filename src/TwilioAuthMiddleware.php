@@ -16,7 +16,7 @@ class TwilioAuthMiddleware extends AuthenticateWithBasicAuth
             $msg = 'Invalid signature for request!. Please check if you are sending a valid X-Twilio-Signature header.';
 
             if (config('app.debug')) {
-                $msg .= ' If you are the owner of this API, check if you have set the services.twilio.secret config key correctly!';
+                $msg .= ' If you are the owner of this API, check if you have set the `services.twilio.secret` config key correctly!';
             }
 
             logger($msg);

@@ -38,13 +38,6 @@
   "scripts": {
     "phpunit": "phpunit"
   },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Princeton255\\TwilioMiddleware\\ServiceProvider"
-      ]
-    }
-  },
   "config": {
     "preferred-install": "dist",
     "sort-packages": true,
