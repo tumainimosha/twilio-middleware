@@ -1,4 +1,4 @@
-# Twilio Middleware
+# Twilio Auth Middleware
 
 A Laravel Middleware for Twilio API signature validation
 
