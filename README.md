@@ -41,11 +41,10 @@ Add Middleware Alias to `app\Http\Kernel.php`
 
 
 ```php
-
-    protected $routeMiddleware = [
-        ...
-        'twilio' => \Princeton255\TwilioMiddleware\TwilioAuthMiddleware::class,
-    ];
+protected $routeMiddleware = [
+    ...
+    'twilio' => \Princeton255\TwilioMiddleware\TwilioAuthMiddleware::class,
+];
 ```
 
 Once alias added, you can use the middleware as below.
