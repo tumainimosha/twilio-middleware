@@ -27,9 +27,9 @@ composer require princeton255/twilio-middleware
 Paste the following in `config/services.php`. In your `.env` file set your `TWILIO_SECRET` respectively.
 
 ```php
-    'twilio' => [
-        'secret' => env('TWILIO_SECRET'),
-    ],
+'twilio' => [
+    'secret' => env('TWILIO_SECRET'),
+],
 ```
 
 ## Usage
@@ -37,19 +37,8 @@ Paste the following in `config/services.php`. In your `.env` file set your `TWIL
 Add the package middleware as a middleware to Twilio API routes you wish to secure.
 
 
-Example in route file
+Add Middleware Alias to `app\Http\Kernel.php`
 
-```php
-Route::middleware(\Princeton255\TwilioMiddleware\TwilioAuthMiddleware::class)
-    ->prefix('twilio')
-    ->group(function () {
-        
-        // Place your secure routes here
-        
-    });
-```
-
-(Optional) Add Middleware Alias to `app\Http\Kernel.php`
 
 ```php
 
