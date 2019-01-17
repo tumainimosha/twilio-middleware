@@ -1,46 +1,47 @@
 {
-  "name": "princeton255/twilio-middleware",
-  "description": "A Laravel Middleware for Twilio API signature validation",
-  "license": "MIT",
-  "keywords": [
-    "twilio",
-    "middleware"
-  ],
-  "type": "library",
-  "authors": [
-    {
-      "name": "Tumaini Mosha",
-      "email": "princeton.mosha@gmail.com"
-    }
-  ],
-  "require": {
-    "php": ">=7.1",
-    "illuminate/support": "~5.7.0",
-    "twilio/sdk": "^5.22"
-  },
-  "require-dev": {
-    "orchestra/testbench": "~3.7.0",
-    "phpunit/phpunit": "^7.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Princeton255\\TwilioMiddleware\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Princeton255\\TwilioMiddleware\\Tests\\": "tests"
+    "name": "tumainimosha/twilio-middleware",
+    "type": "library",
+    "description": "Twilio API signature validation middleware for Laravel 5.7+",
+    "keywords": [
+        "twilio",
+        "middleware"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tumaini Mosha",
+            "email": "princeton.mosha@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": "~5.7.0",
+        "twilio/sdk": "^5.22"
     },
-    "files": [
-      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
-    ]
-  },
-  "scripts": {
-    "phpunit": "phpunit"
-  },
-  "config": {
-    "preferred-install": "dist",
-    "sort-packages": true,
-    "optimize-autoloader": true
-  }
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.13",
+        "orchestra/testbench": "~3.7.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "TwilioMiddleware\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TwilioMiddleware\\Tests\\": "tests"
+        },
+        "files": [
+            "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
 }
