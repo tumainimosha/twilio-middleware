@@ -4,31 +4,19 @@ A Laravel Middleware for Twilio API signature validation
 
 ## Installation
 
-First add this package in repositories section of your `composer.json`
-
-```
-...
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:princeton255/twilio-middleware.git"
-        }
-    ],
-...
-```
-
 Install via composer
+
 ```bash
-composer require princeton255/twilio-middleware
+composer require tumainimosha/twilio-middleware
 ```
 
 ## Configuration
 
-Paste the following in `config/services.php`. In your `.env` file set your `TWILIO_SECRET` respectively.
+Paste the following in `config/services.php`. In your `.env` file set your `TWILIO_TOKEN` respectively.
 
 ```php
 'twilio' => [
-    'secret' => env('TWILIO_SECRET'),
+    'token' => env('TWILIO_TOKEN'),
 ],
 ```
 
@@ -43,7 +31,7 @@ Add Middleware Alias to `app\Http\Kernel.php`
 ```php
 protected $routeMiddleware = [
     ...
-    'twilio' => \Princeton255\TwilioMiddleware\TwilioAuthMiddleware::class,
+    'twilio' => \TwilioMiddleware\TwilioAuthMiddleware::class,
 ];
 ```
 
@@ -61,13 +49,13 @@ Route::middleware('twilio')
 
 ## Security
 
-If you discover any security related issues, please email [Me](mailto:princeton.mosha@gmail.com?subject=TwilioMiddleware Package Security Issue)
+If you discover any security related issues, please email [Me](mailto:princeton.mosha@gmail.com?subject=TwilioMiddleware+Package+Security+Issue)
 instead of using the issue tracker.
 
 ## Credits
 
-- [Tumaini Mosha](https://github.com/princeton255/)
-- [All contributors](https://github.com/princeton255/twilio-middleware/graphs/contributors)
+- [Tumaini Mosha](https://github.com/tumainimosha/)
+- [All contributors](https://github.com/tumainimosha/twilio-middleware/graphs/contributors)
 
 This package is bootstrapped with the help of
 [melihovv/laravel-package-generator](https://github.com/melihovv/laravel-package-generator).
