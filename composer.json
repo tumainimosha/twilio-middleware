@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "illuminate/support": "~5.7.0",
+        "illuminate/support": "~5.7.0|~5.8.0",
         "twilio/sdk": "^5.22"
     },
     "require-dev": {
